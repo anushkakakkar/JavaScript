@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Errorhandling</title>
+    <script>
+        try{
+            let json = '{"name":"Anushka","age":30}';
+            let user = JSON.parse(json);
+
+            if (!user.name){
+                throw new Error("Incomplete data");
+            } 
+            console.log(user.name);
+            console.log(user.age)
+            }catch(error){
+                console.log(error);
+            }finally {
+                console.log("finally");
+            }
+    </script>
+    </head>
+<body>
+
+</body>
+</html>
