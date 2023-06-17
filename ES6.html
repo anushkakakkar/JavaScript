@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ES6</title>
+    <script>
+        let user = "Anushka";
+        let marks = 350;
+        document.write(`Hello I am ${user} and my marks is ${marks}`);
+//Arrow Function
+        let welcome = (name) => {
+            return `Hello and Welcome ${name}`;
+        }
+        console.log(welcome("Anushka Kakkar"));
+        console.log(typeof welcome);
+
+//Rest Operator 
+
+       function sum(name, ...args){
+        let sum = 0;
+        for (let i in args){
+            sum += args[i];
+        }
+        console.log(sum);
+        console.log(name);
+       }
+
+       sum("Anushka",20,30);
+
+// Spread 
+
+     var arr1 = [10,20,30,40];
+
+     var arr2 = [50,60];
+
+     var arr3 = [5,...arr1, ...arr2,65];
+
+     console.log(arr3);
+    </script>
+    </head>
+<body>
+</body>
+</html>
